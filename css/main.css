@@ -37,6 +37,8 @@ h1 {
   /* fontsize */
 }
 
+/* pseudo for vise hvem side som er trykket på */
+
 a:hover {
   color: #e80606ea;
 
@@ -50,6 +52,4 @@ a:hover {
   color: #fff;
 }
 
-/* pseudo for vise hvem side som er trykket på */
 
-/* legge til mediaquery for å gjøre siden responsiv */
