@@ -1,3 +1,55 @@
 /*
     main.css is the usual name for a CSS which will be used on all/most pages.
 */
+
+@import url("https://fonts.googleapis.com/css?family=Alice|Open+Sans|Roboto&display=swap");
+
+/* Felles CSS for banner for alle sider */
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  list-style-type: none;
+  padding: 20px;
+  background-color: #333;
+  display: flex;
+}
+
+li {
+  margin: 0 10px 0 10px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 30px;
+  /* fontsize */
+}
+
+a:hover {
+  color: #e80606ea;
+
+  border-radius: 7px;
+}
+
+.active {
+  padding: 8px;
+  border-radius: 5px;
+  background-color: #085750;
+  color: #fff;
+}
+
+/* pseudo for vise hvem side som er trykket på */
+
+/* legge til mediaquery for å gjøre siden responsiv */
