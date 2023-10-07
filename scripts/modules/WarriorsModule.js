@@ -1,62 +1,70 @@
 const WarriorsModule = (() => {
-  let warriorsArray = [
+  const warriorsArray = [
     {
       name: "Snake",
-      price: 200,
+      priceGold: 200,
       img: "warrior-1.jpg",
       category: "Warrior",
     },
     {
       name: "Giant",
-      price: 500,
+      priceGold: 500,
       img: "warrior-2.jpg",
       category: "Warrior",
     },
     {
       name: "Big Axe",
-      price: 150,
+      priceGold: 150,
       img: "warrior-3.jpg",
       category: "Warrior",
     },
     {
       name: "Thief",
-      price: 50,
+      priceGold: 50,
       img: "warrior-4.jpg",
       category: "Warrior",
     },
     {
       name: "Tanks",
-      price: 250,
+      priceGold: 250,
       img: "warrior-5.jpg",
       category: "Warrior",
     },
     {
       name: "Berserker",
-      price: 275,
+      priceGold: 275,
       img: "warrior-6.jpg",
       category: "Warrior",
     },
     {
       name: "Horse",
-      price: 100,
+      priceGold: 100,
+      priceWood: 50,
+      priceMetal: 50,
       img: "horse.png",
       category: "war-machine",
     },
     {
       name: "Cannon",
-      price: 300,
+      priceGold: 300,
+      priceWood: 100,
+      priceMetal: 100,
       img: "cannon.png",
       category: "war-machine",
     },
     {
       name: "Catapult",
-      price: 350,
+      priceGold: 350,
+      priceWood: 100,
+      priceMetal: 150,
       img: "catapult.png",
       category: "war-machine",
     },
     {
       name: "Elephant",
-      price: 400,
+      priceGold: 400,
+      priceWood: 150,
+      priceMetal: 200,
       img: "elephant.png",
       category: "war-machine",
     },
@@ -74,10 +82,12 @@ const WarriorsModule = (() => {
     return warriorsArray.find((warMachine) => warMachine.name === name);
   };
 
+
   return {
     getall,
     getWarrior,
     getWarMachine,
+
   };
 })();
 

@@ -11,6 +11,15 @@
   font-family: "Roboto";
 }
 
+h3 {
+  font-weight: bold;
+  padding: 10px;
+  font-family: "Alice";
+  font-size: 40px;
+  margin: 0;
+  text-align: center;
+}
+
 header {
   background-color: #333;
   color: #fff;
@@ -22,7 +31,7 @@ header {
 
 ul {
   list-style-type: none;
-  padding: 20px;
+  padding: 10px;
   background-color: #333;
   display: flex;
 }
@@ -40,7 +49,7 @@ h1 {
 /* pseudo for vise hvem side som er trykket på */
 
 a:hover {
-  color: #e80606ea;
+  color: #f8e807ea;
 
   border-radius: 7px;
 }
@@ -51,5 +60,3 @@ a:hover {
   background-color: #085750;
   color: #fff;
 }
-
-

@@ -4,15 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Gathering army</title>
     <link rel="stylesheet" href="/css/main.css">
     <script type="module" src="/scripts/gathering-army.js"></script>
+    <script type="module" src="/scripts/getting-resources.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Gathering army</title>
 </head>
 
 <body>
     <header>
-        <h1>Resource shop</h1>
+        <h1>Gathering army</h1>
         <nav>
             <ul>
                 <li><a class="active" href="gathering-army.html">Home</a></li>
@@ -20,12 +21,29 @@
                 <li><a href="your-army.html">Your army</a></li>
             </ul>
         </nav>
+
     </header>
     <main>
-        <section>
+        <section id="resources-output">
 
         </section>
-        <section class="container m-auto grid grid-cols-3 md:grid-cols-5 lg:grid-cols-8 gap-10" id="warrior-selection">
+
+        <section>
+
+            <section>
+                <h3>Warriors</h3>
+            </section>
+
+        </section>
+        <section class="container m-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-10" id="warrior-selection">
+
+        </section>
+        <section>
+            <h3>War Machines and animals</h3>
+        </section>
+        <section class="container m-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-10"
+            id="warmachineanimal-selection">
+
 
         </section>
     </main>
