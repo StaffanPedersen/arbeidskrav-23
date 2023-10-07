@@ -51,3 +51,11 @@ a:hover {
   background-color: #085750;
   color: #fff;
 }
+
+.cursor-axe {
+  cursor: url("/images/axe-cursor.png"), auto;
+}
+
+.cursor-pickaxe {
+  cursor: url("/images/pickaxe-cursor.png"), auto;
+}
