@@ -11,15 +11,6 @@
   font-family: "Roboto";
 }
 
-h3 {
-  font-weight: bold;
-  padding: 10px;
-  font-family: "Alice";
-  font-size: 40px;
-  margin: 0;
-  text-align: center;
-}
-
 header {
   background-color: #333;
   color: #fff;

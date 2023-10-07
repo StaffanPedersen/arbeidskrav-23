@@ -1,7 +1,11 @@
 import ResoursesModule from "./modules/ResoursesModule.js";
 
 const resoursesSelection = document.querySelector("#resources-output");
+const gatherResourcesOutput = document.querySelector(
+  "#gather-resources-output"
+);
 
+// viser resurser på alle sidene.
 const showResourses = () => {
   const resourses = ResoursesModule.getall();
 
@@ -27,17 +31,18 @@ const showResourses = () => {
   resoursesSelection.innerHTML = htmltext;
 };
 
+// funksjon for å beregne innsamlet resurser på getting-resources siden.
 const workResourses = () => {
+  let htmltext = "";
 
-    
+  htmltext += `   
+    <article class="w-64 h-64   flex w-full ">
+`;
 };
-
-
-
-
 
 (() => {
   showResourses();
+  workResourses();
 })();
 
 // Compare this snippet from scripts/modules/ArmyModule.js:
