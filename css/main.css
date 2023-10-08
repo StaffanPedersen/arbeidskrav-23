@@ -59,3 +59,25 @@ a:hover {
 .cursor-pickaxe {
   cursor: url("/images/pickaxe-cursor.png"), auto;
 }
+
+.resources-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 100px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mining-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mining-img img {
+  width: 100%;
+  border-radius: 60px;
+}
+.wood-img img {
+  width: 100%;
+  border-radius: 60px;
+}

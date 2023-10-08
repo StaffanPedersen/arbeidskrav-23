@@ -15,9 +15,9 @@ const showAllWarriors = () => {
   warriors.forEach((warrior) => {
     htmltext += `
     
-        <article class=" flex flex-col items-center   mx-auto rounded-lg shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]" >
+        <article class=" flex flex-col items-center  rounded-lg shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]" >
         <h3 class="mb-2 text-center text-2xl font-bold tracking-tight text-gray-900 dark:text-white">${warrior.name}</h3>
-        <img src="images/${warrior.img}" class="w-2/4  " alt="${warrior.name}" />
+        <img src="images/${warrior.img}" class="w-2/5 h-3/5  " alt="${warrior.name}" />
         <p class="text-center font-bold p-2"> Gold: ${warrior.priceGold}  </p>
         <button class="add-to-army  focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800" data-name="${warrior.name}">Add to army</button>
       </article>   
@@ -40,7 +40,7 @@ const showAllWarriors = () => {
         <h3 class="mb-2 text-center text-2xl font-bold tracking-tight text-gray-900 dark:text-white">${
           warrior.name
         }</h3>
-        <img src="images/${warrior.img}" class="w-2/4  alt="${warrior.name}" />
+        <img src="images/${warrior.img}" class="w-2/5 h-4/6  alt="${warrior.name}" />
         <p class="text-center font-bold  p-2"> Gold: ${
           warrior.priceGold
         } Wood: ${warrior.priceWood ? ` ${warrior.priceWood}` : "0"} Metal: ${
@@ -52,6 +52,7 @@ const showAllWarriors = () => {
       </article>
     `;
   });
+  
   warMachineSelection.innerHTML = htmltext;
 
   const addToArmyButtons = document.querySelectorAll(".add-to-army");

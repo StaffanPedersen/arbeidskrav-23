@@ -1,5 +1,5 @@
 const ResoursesModule = (function () {
-  let resoursesArray = [
+  let resourcesArray = [
     {
       gold: 0,
       wood: 0,
@@ -7,32 +7,34 @@ const ResoursesModule = (function () {
     },
   ];
 
+  console.log(resourcesArray);
+
   const getall = () => {
-    return structuredClone(resoursesArray);
+    return structuredClone(resourcesArray);
   };
 
   const getGold = () => {
-    return structuredClone(resoursesArray).find((resourse) => resourse.gold);
+    return structuredClone(resourcesArray).find((resourse) => resourse.gold);
   };
 
   const getWood = () => {
-    return structuredClone(resoursesArray).find((resourse) => resourse.wood);
+    return structuredClone(resourcesArray).find((resourse) => resourse.wood);
   };
 
   const getMetal = () => {
-    return structuredClone(resoursesArray).find((resourse) => resourse.metal);
+    return structuredClone(resourcesArray).find((resourse) => resourse.metal);
   };
 
   const setGold = (amount) => {
-    resoursesArray[0].gold += amount;
+    resourcesArray[0].gold += amount;
   };
 
   const setWood = (amount) => {
-    resoursesArray[0].wood += amount;
+    resourcesArray[0].wood += amount;
   };
 
   const setMetal = (amount) => {
-    resoursesArray[0].metal += amount;
+    resourcesArray[0].metal += amount;
   };
 
   return {
