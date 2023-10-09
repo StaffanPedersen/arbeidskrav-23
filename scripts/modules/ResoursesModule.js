@@ -1,16 +1,10 @@
 const ResoursesModule = (function () {
-  let resourcesArray = [
-    {
-      gold: 0,
-      wood: 0,
-      metal: 0,
-    },
-  ];
+  let resourcesArray = [];
 
   console.log(resourcesArray);
 
   const getall = () => {
-    return structuredClone(resourcesArray);
+    return resourcesArray;
   };
 
   const getGold = () => {
