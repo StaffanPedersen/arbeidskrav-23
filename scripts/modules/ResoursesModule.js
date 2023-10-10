@@ -26,17 +26,17 @@ const ResourcesModule = (function () {
   };
 
   const setGold = (amount) => {
-    resourcesArray[0].gold = amount;
+    resourcesArray[0].gold += amount;
     updateLocalStorage();
   };
 
   const setWood = (amount) => {
-    resourcesArray[0].wood = amount;
+    resourcesArray[0].wood += amount;
     updateLocalStorage();
   };
 
   const setMetal = (amount) => {
-    resourcesArray[0].metal = amount;
+    resourcesArray[0].metal += amount;
     updateLocalStorage();
   };
 
@@ -54,12 +54,7 @@ const ResourcesModule = (function () {
   const gatherWood = () => {
     // math random for å få tilfeldig antall resurser.
     const randomWood = Math.floor(Math.random() * 10) + 1;
-
-    if (randomWood < 7.5) {
-      setWood(randomWood);
-    } else {
-      setGold(randomWood);
-    }
+    setWood(randomWood);
   };
 
   return {
