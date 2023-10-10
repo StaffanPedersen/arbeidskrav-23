@@ -15,8 +15,6 @@ const showResourses = () => {
   let woodValue = ResourcesModule.getWood();
   let metalValue = ResourcesModule.getMetal();
 
-  let htmltext = "";
-
   resoursesSelection.innerHTML = `
         <article class="w-64 h-64   flex w-full  ">
             <div  class="flex-1 p-4 text-center flex items-center justify-center">
@@ -82,3 +80,5 @@ gatherResourcesBtnMetal.addEventListener("click", () => {
 (() => {
   showResourses();
 })();
+
+export { showResourses };

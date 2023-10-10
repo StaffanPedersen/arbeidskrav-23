@@ -7,8 +7,6 @@ const ResourcesModule = (function () {
     },
   ];
 
-  console.log(resourcesArray);
-
   const updateLocalStorage = () => {
     localStorage.setItem("resources", JSON.stringify(resourcesArray));
   };

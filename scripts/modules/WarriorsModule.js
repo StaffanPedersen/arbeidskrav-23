@@ -74,20 +74,62 @@ const WarriorsModule = (() => {
     return structuredClone(warriorsArray);
   };
 
+  const getallArray = () => {
+    const warriorObject = localStorage.getItem("warriors");
+    const warriorObjectParsed = JSON.parse(warriorObject);
+    return warriorObjectParsed;
+  };
+
   const getWarrior = (name) => {
-    return warriorsArray.find((warrior) => warrior.name === name);
+    return warriorsArray.find((warrior) => warrior.name == name);
   };
 
   const getWarMachine = (name) => {
     return warriorsArray.find((warMachine) => warMachine.name === name);
   };
 
+  const itemName = "warriors";
+
+  const getAllLocalstorage = () => {
+    if (checkIfLocalStorageIsNotEmpty()) {
+      return getLocalStorageMoviesParsed();
+    } else {
+      return [];
+    }
+  };
+
+  // function for adding warriors to army
+  const addWarrior = (newWarrior) => {
+    const newObjectRandomId = crypto.randomUUID();
+    newWarrior.id = newObjectRandomId;
+
+    const warriorStorageArray = getAllLocalstorage();
+    warriorStorageArray.push(newWarrior);
+
+    const warriorStorageArrayString = JSON.stringify(warriorStorageArray);
+
+    localStorage.setItem(itemName, warriorStorageArrayString);
+  };
+
+  const checkIfLocalStorageIsNotEmpty = () => {
+    if (localStorage.getItem(itemName) != null) {
+      return true;
+    } else {
+      return false;
+    }
+  };
+
+  const getLocalStorageMoviesParsed = () => {
+    return JSON.parse(localStorage.getItem(itemName));
+  };
 
   return {
     getall,
+    getallArray,
     getWarrior,
     getWarMachine,
-
+    addWarrior,
+    checkIfLocalStorageIsNotEmpty,
   };
 })();
 
