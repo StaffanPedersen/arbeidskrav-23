@@ -46,11 +46,11 @@ const createButtonWood = () => {
   const button = document.createElement("button");
   button.type = "button";
   button.innerHTML = `
-    <div class=" cursor-[url(/images/axe-cursor.png),_pointer]      ">
-    <img src="/images/woods-of-ghalduz.png" 
-      alt="woods-of-ghalduz" width="500" height= auto>
-      </div>
-      `;
+  <div class=" cursor-[url(/images/axe-cursor.png),_pointer]      ">
+  <img src="/images/woods-of-ghalduz.png" 
+    alt="woods-of-ghalduz" width="500" height= auto>
+    </div>
+    `;
   return button;
 };
 
@@ -58,11 +58,11 @@ const createButtonMetal = () => {
   const button = document.createElement("button");
   button.type = "button";
   button.innerHTML = `
-      <div class=" cursor-[url(/images/pickaxe-cursor.png),_pointer]     ">
-      <img src="/images/mines-of-thiartha.jpg" 
-        alt="woods-of-ghalduz" width="500" height= auto>
-        </div>
-        `;
+    <div class=" cursor-[url(/images/pickaxe-cursor.png),_pointer]     ">
+    <img src="/images/mines-of-thiartha.jpg" 
+      alt="woods-of-ghalduz" width="500" height= auto>
+      </div>
+      `;
   return button;
 };
 
