@@ -2,6 +2,8 @@ import WarriorsModule from "./modules/WarriorsModule.js";
 
 const warriorsSelection = document.querySelector("#army-output");
 
+// function showing all warriors and warmachines from localstorage
+
 const showBoughtAllWarriors = (warriorStorageArray) => {
   const warriors = WarriorsModule.getallArray();
 

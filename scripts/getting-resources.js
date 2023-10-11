@@ -16,18 +16,18 @@ const showResourses = () => {
   let metalValue = ResourcesModule.getMetal();
 
   resoursesSelection.innerHTML = `
-        <article class="w-64 h-64   flex w-full  ">
-            <div  class="flex-1 p-4 text-center flex items-center justify-center">
+        <article class="sticky top-0 w-28 h-28 flex w-full m-10  ">
+            <div  class="flex-1 p-4  text-center flex items-center justify-center">
                 <img src="images/gold-coin.png" class="w-20 h-20  " alt="gold">
                 <p class="text-center"> Gold: ${goldValue} </p>
       
             </div>
-            <div class="flex-1 p-4 text-center flex items-center justify-center">
+            <div class="flex-1  text-center flex items-center justify-center">
                 <img src="images/wood.png" class="w-20 h-20 " alt="wood">
                 <p class="text-center"> Wood: ${woodValue} </p>
            
             </div>
-            <div class="flex-1 p-4  text-center flex items-center justify-center">
+            <div class="flex-1  text-center flex items-center justify-center">
                 <img src="images/metal.png" class="w-20 h-20" alt="metal">
                 <p class="text-center"> Metal: ${metalValue} </p>
           

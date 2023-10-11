@@ -70,6 +70,8 @@ const addWarmachinebtn = document.querySelectorAll(
   ".btn-add-to-army-warmachine"
 );
 
+//add warrior to army
+
 const checkAddWarrior = (e) => {
   const warriorName = e.target.dataset.name;
   const warrior = WarriorsModule.getWarrior(warriorName);
