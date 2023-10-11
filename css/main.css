@@ -106,7 +106,8 @@ a:hover {
   }
 
   /* mobile-resource-img */
-  .mobile-resource-img {
+
+  #mobile-resource-img {
     width: 40px;
     height: auto;
   }
