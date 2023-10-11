@@ -20,7 +20,7 @@ const showAllWarriors = () => {
   warriors.forEach((warrior) => {
     htmltext += `
     
-        <article class=" flex flex-col items-center  rounded-lg shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]" >
+        <article class=" col flex flex-col items-center  rounded-lg shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]" >
         <h3 class="mb-2 text-center text-2xl font-bold tracking-tight text-gray-900 dark:text-white">${warrior.name}</h3>
         <img src="images/${warrior.img}" class="w-2/5 h-3/5  " alt="${warrior.name}" />
         <p class="text-center font-bold p-2"> Gold: ${warrior.priceGold}  </p>
@@ -42,7 +42,7 @@ const showAllWarriors = () => {
   warmachines.forEach((warrior) => {
     htmltext += `
 
-        <article class=" flex flex-col items-center  rounded-lg shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
+        <article class=" mx-auto col flex flex-col items-center  rounded-lg shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
         <h3 class="mb-2 text-center text-2xl font-bold tracking-tight text-gray-900 dark:text-white">${
           warrior.name
         }</h3>

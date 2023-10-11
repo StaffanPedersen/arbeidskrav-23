@@ -40,10 +40,10 @@ const ResourcesModule = (function () {
 
   const gatherMining = () => {
     // math random for å få tilfeldig antall resurser.
-    const randomMining = Math.floor(Math.random() * 10) + 1;
+    const randomMining = Math.floor(Math.random() * 100) + 1;
 
     // 75% sjanse for å få metal, 25% sjanse for å få gold.
-    if (randomMining < 7.5) {
+    if (randomMining < 75) {
       setMetal(randomMining);
     } else {
       setGold(randomMining);
@@ -52,7 +52,7 @@ const ResourcesModule = (function () {
 
   const gatherWood = () => {
     // math random for å få tilfeldig antall resurser.
-    const randomWood = Math.floor(Math.random() * 10) + 1;
+    const randomWood = Math.floor(Math.random() * 100) + 1;
     setWood(randomWood);
   };
 

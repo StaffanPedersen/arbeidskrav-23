@@ -81,3 +81,53 @@ a:hover {
   width: 100%;
   border-radius: 60px;
 }
+
+@media only screen and (max-width: 650px) {
+  /* header */
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* ul */
+  ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* li */
+  li {
+    margin: 10px 0 10px 0;
+  }
+
+  /* h1 */
+  h1 {
+    font-size: 20px;
+  }
+
+  /* mobile-resource-img */
+  .mobile-resource-img {
+    width: 40px;
+    height: auto;
+  }
+
+  /* Getting-resources.html*/
+  .resources-images {
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+  }
+
+  .mining-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .mining-img img {
+    width: 100%;
+    border-radius: 60px;
+  }
+  .wood-img img {
+    width: 100%;
+    border-radius: 60px;
+  }
+}
