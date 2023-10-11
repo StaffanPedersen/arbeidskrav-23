@@ -42,6 +42,7 @@ const ResourcesModule = (function () {
     // math random for å få tilfeldig antall resurser.
     const randomMining = Math.floor(Math.random() * 10) + 1;
 
+    // 75% sjanse for å få metal, 25% sjanse for å få gold.
     if (randomMining < 7.5) {
       setMetal(randomMining);
     } else {
