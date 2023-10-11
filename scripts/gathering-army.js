@@ -7,19 +7,48 @@ const warriorSelection = document.querySelector("#warrior-selection");
 const warMachineSelection = document.querySelector(
   "#warmachineanimal-selection"
 );
+const input = document.querySelector("input");
 
 // function showing all warriors and warmachines
-const showAllWarriors = () => {
-  const warriors = WarriorsModule.getall().filter(
-    (warrior) => warrior.category === "Warrior"
-  );
+const showAllWarriors = (value) => {
+  // Search logic with filter()
+  const searchValue = value?.target.value.toLowerCase();
+
+  let filteredWarriors;
+  let filteredWarmachines;
+
+  if (searchValue) {
+    // Filter warriors based on search value (case insensitive)
+    filteredWarriors = WarriorsModule.getall().filter((warrior) =>
+      warrior.name.toLowerCase().includes(searchValue)
+    );
+  } else {
+    // Show all warriors if no search value
+    filteredWarriors = WarriorsModule.getall().filter(
+      (warrior) => warrior.category === "Warrior"
+    );
+  }
+
+  if (searchValue) {
+    // Filter warriors based on search value (case insensitive)
+    filteredWarmachines = WarriorsModule.getall().filter((warrior) =>
+      warrior.name.toLowerCase().includes(searchValue)
+    );
+  } else {
+    // Show all warriors if no search value
+    filteredWarmachines = WarriorsModule.getall().filter(
+      (warrior) => warrior.category === "war-machine"
+    );
+  }
+
+  console.log(searchValue);
 
   let htmltext = "";
 
   // html injection warriors
-  warriors.forEach((warrior) => {
+  filteredWarriors.forEach((warrior) => {
     htmltext += `
-    
+
         <article class=" col flex flex-col items-center  rounded-lg shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]" >
         <h3 class="mb-2 text-center text-2xl font-bold tracking-tight text-gray-900 dark:text-white">${warrior.name}</h3>
         <img src="images/${warrior.img}" class="w-2/5 h-3/5  " alt="${warrior.name}" />
@@ -39,7 +68,7 @@ const showAllWarriors = () => {
   htmltext = "";
 
   // html injection warmachines
-  warmachines.forEach((warrior) => {
+  filteredWarmachines.forEach((warrior) => {
     htmltext += `
 
         <article class=" mx-auto col flex flex-col items-center  rounded-lg shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
@@ -115,6 +144,9 @@ document.addEventListener("click", (e) => {
   } else if (e.target.matches(".btn-add-to-army-warmachine")) {
     checkAddWarmachine(e);
   }
+});
+input.addEventListener("input", (d) => {
+  showAllWarriors(d);
 });
 
 (() => {
