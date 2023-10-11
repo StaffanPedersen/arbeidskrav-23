@@ -75,7 +75,6 @@ gatherResourcesBtnMetal.addEventListener("click", () => {
   ResourcesModule.gatherMining();
   showResourses();
 });
-// funksjon for å lagre resurser i localstorage
 
 (() => {
   showResourses();
